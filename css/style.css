@@ -34,17 +34,21 @@ body {
 
  /*icon*/
  .icons {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+    fill: black;
+    background-color:#1ECBE1
     width: 30px;
     height: 30px;
  }
 
  .icon--primary {
-   background: #fff;
+   background: #1ECBE1;
    color: blue;
 }
 
 .icon--primary:hover {
-   background: grey;
+   background: #1ECBE1;
    border-radius: 10px;
    transition: 0.3s;
 }
