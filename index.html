@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head> 
-    <title>My personal profile</title>
+    <title>Alex Lin's personal profile </title>
     <meta name="description" content="Welcome to Alex Lin's world!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <h1>My First Heading</h1>
-
-    <p>My first paragraph.</p>
+    <nav class="nav collapsible">
+      <h3 class="menuhead">林宇昂的平行宇宙</h3>
+      <svg class="icons icon--primary icon--menu">
+        <use xlink:href="images/menu.svg#chinese-new-year-sign-svgrepo-com"></use>
+      </svg>
+      <ul class="list nav_list collapsible_content">
+        <li class="nav_item"><a href="#">My Expereince</a></li>
+        <li class="nav_item"><a href="#">My Education</a></li>
+        <li class="nav_item"><a href="#">My Passions</a></li>
+      </ul>
+      </nav>
+    <section class="hero block block--shape">
+      <div class="container grid grid--cols-2">
+        <img class="hero__image" src="images/bannerimage3.png" alt="profile banner">
+        <header class="hero__content">
+          <h1>Welcome to</h1>
+          <p class="hero__tagline">Alex's profile</p>
+          <a href="" class="btn btn--primary btn--stretched">Explore</a>
+        </div>
+      </header>
+    </section>
+    <script src="Javascript/main.js"></script>
   </body>
-</html>
+</html> 
