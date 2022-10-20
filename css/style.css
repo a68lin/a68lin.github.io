@@ -18,7 +18,7 @@ body {
 
  /*link*/
  .link-arrow {
-    color: blue;
+    color: #1ECBE1;
     text-transform: uppercase;
  }
 
@@ -186,23 +186,31 @@ body {
  .card {
    border-radius: 7px;
    box-shadow: 0 0 20px 10px #f3f3f3;
+   margin: 5rem 5rem 0rem 5rem;
+   background-size: 100%;
  }
 
  .card__img {
    box-shadow: 0 0 20px 10px #f3f3f3;
-   width: 100%;
-   margin:none;
+   width: 60%;
+   margin: auto;
+   display: block;
  }
  .card__body {
    color: black;
-   padding: 2rem 3rem;
-   opacity: 1;
+   margin: auto;
+   display: block;
  }
 
+ .profile {
+  padding: 3rem 3rem;
+  align-items: center;
+  
+}
+
  .profilelist {
-   padding: 1rem;
-   margin-top: 0rem;
-   line-height: 3rem;
+   margin: 0rem;
+   line-height: 4rem;
    list-style: none;
  }
 
@@ -211,32 +219,41 @@ body {
    height: 350px;
  }
 
+ .profile_item {
+  font-size: 1.2rem;
+   color: black;
+   padding: 0.5rem 1rem;
+ }
+
  .inlist {
    display: flex;
-   vertical-align: auto;
+   vertical-align: text-bottom;
  }
 
  .profileicon {
-   background-color: lightblue;
+   background-color: #F2C40D;
    border-radius: 25%;
    width: 25px;
    height: 25px;
    margin-right: 0.6rem;
-   margin-top: 0.6rem;
+   margin-top: 1.3rem;
  }
 
  .profilelink {
-   color: white;
+   color: black;
 
  }
 
- .pro_item {
-  padding: 0rem 0rem;
-  border-bottom: 1px solid black;
+ .profile_item {
+  padding: 0rem;
+  height: auto;
+  border-bottom: 1px solid #2FD073;
 }
 
-.profile {
-  padding: 3rem;
+.profile__heading {
+  color: #1ECBE1;
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
  /*gtid*/
@@ -257,13 +274,16 @@ body {
   margin: 0 auto;
 }
 
-.block {
+.block_banner {
   padding: 6rem 2rem;
   background:linear-gradient(#1ECBE1, #F2C40D);
-  /*background-image: url(/Images/pexels-asad-photo-maldives-457881.jpg);
-  background-size: 100%;*/
   text-align: center;
   box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.block_title {
+  padding: 0;
+  text-align: center;
 }
 
 .block__heading {
@@ -321,4 +341,3 @@ body {
   margin-top: 1rem;
   margin-left: 3rem;
 }
-
