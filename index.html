@@ -8,34 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav collapsible">
-      <h3 class="menuhead">林宇昂的平行宇宙</h3>
+      <a class="menuhead menu_item" href="#">中文</a>
       <svg class="icons icon--primary icon--menu">
         <use xlink:href="Images/menu.svg#chinese-new-year-sign-svgrepo-com"></use>
       </svg>
       <ul class="list nav_list collapsible_content">
-        <li class="nav_item"><a href="#">My Expereince</a></li>
-        <li class="nav_item"><a href="#">My Education</a></li>
-        <li class="nav_item"><a href="#">My Passions</a></li>
+        <li class="nav_item"><a href="#">Experience</a></li>
+        <li class="nav_item"><a href="#">Education</a></li>
+        <li class="nav_item"><a href="#">Passions</a></li>
       </ul>
       </nav>
     <section class="hero block_banner block--shape">
       <div class="container grid grid--cols-2">
-        <img class="hero__image" src="Images/bannerimage3.png" alt="profile banner">
-        <header class="hero__content">
+        <img data-aos="fade-up" data-aos-duration="2000" class="hero__image" src="Images/bannerimage3.png" alt="profile banner">
+        <header class="hero__content" data-aos="fade-left" data-aos-duration="2000">
           <h1>Welcome to</h1>
           <p class="hero__tagline">Alex's profile</p>
           <a href="" class="btn btn--primary btn--stretched">Explore</a>
         </div>
       </header>
     </section>
-    <section class="block_title container">
+    <section class="block_title container" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="profile__heading">My Profile</h2>
       <p class="profile__contents">Hello world!</p>
     </section>
-     <div class="card profile">
+     <div class="card profile" data-aos="zoom-in" data-aos-duration="1000">
       <div class="grid grid--cols-2">
         <img class="card__img" src="Images/Headshot.JPG" alt="Headshot"></img>
         <div class="card__body">
@@ -75,7 +76,38 @@
         </div>
       </div>
     </div>
-
+    <article class="grid grid--cols-2">
+      <div data-aos="zoom-in-right" data-aos-duration="1000">
+        <h3 class="maincontent_heading2">My Education</h3>
+        <p class="maincontent_text">The purpose of education is to turn mirrors into windows.</p>
+        <a href="#" class = "link-arrow maincontent_link">my schools</a>
+      </div>
+      <div data-aos="zoom-out-down" data-aos-duration="3000">
+        <img class="educationlogo" src="../Images/education.png" alt="educationlogo"></img>
+        </div>
+    </article>
+    <article class="grid grid--cols-2">
+      <div data-aos="zoom-out-down" data-aos-duration="3000">
+        <img class="experiencelogo" src="../Images/teluslogo.png" alt="teluslogo"></img>
+        </div>
+      <div data-aos="zoom-in-right" data-aos-duration="1000">
+        <h3 class="maincontent_heading1">My Experience</h3>
+        <p class="maincontent_text">Men are wise in proportion, not to their experience, but to their capacity for experience.</p>
+        <a href="#" class = "link-arrow maincontent_link">my career path</a>
+      </div>
+    </article>
+    <article class="grid grid--cols-2">
+      <div data-aos="zoom-in-right" data-aos-duration="1000">
+        <h3 class="maincontent_heading3">My Passions</h3>
+        <p class="maincontent_text">Nothing great in the world has ever been accomplished without passion.</p>
+        <a href="#" class = "link-arrow maincontent_link">more about myself</a>
+      </div>
+      <div data-aos="zoom-out-down" data-aos-duration="3000">
+      <img class="passionlogo" src="Images/passions.png" alt="passionlogo"></img>
+      </div>
+    </article>
     <script src="Javascript/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html> 
