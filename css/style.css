@@ -126,8 +126,6 @@ body {
 
  .list {
    list-style: none;
-   padding-left: 0;
-   color: blue;
  }
 
  .nav{
@@ -142,18 +140,20 @@ body {
  .nav_list {
    width:100%;
    margin: 0;
+   padding: 0rem;
  }
 
  .nav_item {
+  width: 100%;
   font-size: 1.2rem;
-   color: white;
-   padding: 0.5rem 1rem;
-   border-bottom: 1px solid black;
-   margin-right: 2rem;
+   color: #f3f3f3;
+   padding: 0.5rem 0.5rem;
+   border-bottom: 1px solid #f3f3f3;
+   margin-right: 0rem;
  }
 
  .nav_item > a {
-   color: white;
+   color: #f3f3f3;
    transition: color .3s
  }
 
@@ -179,6 +179,7 @@ body {
    }
    .nav_item {
       border:0;
+      padding: 0.5rem 3rem;
    }
  }
 
@@ -260,10 +261,15 @@ body {
 }
 
 .profile__heading {
-  color: #1ECBE1;
-  font-size: 4rem;
+  color: black;
+  font-size: 3rem;
   margin-bottom: 0;
 }
+
+.profile__contents {
+  font-size: 1.2rem;
+  opacity: 0.6;
+ }
 
 @media screen and (min-width: 770px) {
   .card {
@@ -334,9 +340,14 @@ body {
  }
  
  .profile__heading {
-   color: #1ECBE1;
+   color: black;
    font-size: 4rem;
    margin-bottom: 0;
+ }
+
+ .profile__contents {
+  font-size: 2rem;
+  opacity: 0.6;
  }
  }
 
@@ -448,21 +459,28 @@ body {
   margin: 10rem 3rem;
   margin-bottom: 0rem;
   font-size: 3.5rem;
-  color: #F2C40D;
+  color: black;
 }
 
 .maincontent_heading2 {
   margin: 10rem 3rem;
   margin-bottom: 0rem;
   font-size: 3.5rem;
-  color: #179DE8;
+  color: black;
 }
 
 .maincontent_heading3 {
   margin: 10rem 3rem;
   margin-bottom: 0rem;
   font-size: 3.5rem;
-  color: #E3231C;
+  color: black;
+}
+
+.maincontent_heading4 {
+  margin: 10rem 3rem;
+  margin-bottom: 0rem;
+  font-size: 3.5rem;
+  color: black;
 }
 
 .maincontent_text {
@@ -516,7 +534,7 @@ body {
 }
 
 .experiencelogo {
-  width: 90%;
+  width: 100%;
   margin-top: 1rem;
 }
 .educationlogo {
@@ -525,6 +543,32 @@ body {
 }
 
 .passionlogo {
-  width: 90%;
+  width: 100%;
   margin-top: 1rem;
+}
+
+.skillslogo {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.orderchange {
+  display: grid;
+  grid-template-areas: "content"
+                        "logo";
+}
+
+.content {
+  grid-area: content;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+@media screen and (min-width: 700px) {
+  .orderchange {
+    display: grid;
+    grid-template-areas: "logo content";
+  }
 }
