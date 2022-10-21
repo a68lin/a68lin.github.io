@@ -440,8 +440,7 @@ body {
 
 .hero__image {
   width: 80%;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  margin: auto;
 }
 
 /*Feature*/
