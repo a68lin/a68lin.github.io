@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 body {
     font-family: PT Serif, Arial, Helvetica, sans-serif;
 }
@@ -163,7 +167,7 @@ body {
    margin-left: 2rem;
  }
 
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 770px) {
    .icon--menu {
       display:none;
    }
@@ -180,7 +184,7 @@ body {
 
  .menu_item {
   color: white;
-   ransition: color .3s
+   transition: color .3s
  }
 
  .menu_item:hover {
@@ -191,7 +195,7 @@ body {
  .card {
    border-radius: 7px;
    box-shadow: 0 0 20px 10px #f3f3f3;
-   margin: 5rem 5rem 0rem 5rem;
+   margin: 0rem 0rem 0rem 0rem;
    background-size: 100%;
  }
 
@@ -261,12 +265,87 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 770px) {
+  .card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    margin: 5rem 5rem 0rem 5rem;
+    background-size: 100%;
+  }
+ 
+  .card__img {
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
+  .card__body {
+    color: black;
+    margin: auto;
+    display: block;
+  }
+ 
+  .profile {
+   padding: 3rem 3rem;
+   align-items: center;
+   
+ }
+ 
+  .profilelist {
+    margin: 0rem;
+    line-height: 4rem;
+    list-style: none;
+  }
+ 
+  .profilebackground {
+    width: 900px;
+    height: 350px;
+  }
+ 
+  .profile_item {
+   font-size: 1.2rem;
+    color: black;
+    padding: 0.5rem 1rem;
+  }
+ 
+  .inlist {
+    display: flex;
+    vertical-align: text-bottom;
+  }
+ 
+  .profileicon {
+    background-color: #F2C40D;
+    border-radius: 25%;
+    width: 25px;
+    height: 25px;
+    margin-right: 0.6rem;
+    margin-top: 1.3rem;
+  }
+ 
+  .profilelink {
+    color: black;
+ 
+  }
+ 
+  .profile_item {
+   padding: 0rem;
+   height: auto;
+   border-bottom: 1px solid #2FD073;
+ }
+ 
+ .profile__heading {
+   color: #1ECBE1;
+   font-size: 4rem;
+   margin-bottom: 0;
+ }
+ }
+
  /*gtid*/
  .grid {
   display:grid;
  }
 
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 770px) {
   .grid--cols-2 {
    grid-template-columns: repeat(2, 1fr);
   }
@@ -277,7 +356,6 @@ body {
  .container {
   max-width: 1140px;
   margin: 0 auto;
-  
 }
 
 .block_banner {
@@ -309,7 +387,7 @@ body {
   clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 770px) {
   .block--shape {
     padding-bottom: 10rem;
     clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%, 30% 75%);
@@ -324,29 +402,46 @@ body {
   padding-top: 10;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 770px) {
   .hero {
     padding-top: 0;
     height: 780px;
   }
+  .hero__content {
+    padding: 3rem 4rem;
+    color: white;
+    font-size: 2.5rem;
+  }
+  .hero__tagline {
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+    font-size: 2rem;
+  }
+  
+  .hero__image {
+    width: 80%;
+    margin-top: 1rem;
+  }
 }
 
 .hero__content {
-  padding: 3rem 4rem;
+  padding: 3rem 0rem;
   color: white;
   font-size: 2.5rem;
+  margin-left: 0rem;
 }
 
 .hero__tagline {
   margin-bottom: 4rem;
   letter-spacing: 1px;
   font-size: 2rem;
+  margin-left: 0rem;
 }
 
 .hero__image {
   width: 80%;
   margin-top: 1rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 /*Feature*/
