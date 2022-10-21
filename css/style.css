@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-#hpvideo {
-    width: 800px;
-}
-
 body {
     font-family: PT Serif, Arial, Helvetica, sans-serif;
 }
@@ -167,7 +163,7 @@ body {
    margin-left: 2rem;
  }
 
- @media screen and (min-width: 770px) {
+ @media screen and (min-width: 1200px) {
    .icon--menu {
       display:none;
    }
@@ -270,7 +266,7 @@ body {
   display:grid;
  }
 
- @media screen and (min-width: 770px) {
+ @media screen and (min-width: 1200px) {
   .grid--cols-2 {
    grid-template-columns: repeat(2, 1fr);
   }
@@ -313,7 +309,7 @@ body {
   clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%);
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1200px) {
   .block--shape {
     padding-bottom: 10rem;
     clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%, 30% 75%);
@@ -328,7 +324,7 @@ body {
   padding-top: 10;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 0;
     height: 780px;
