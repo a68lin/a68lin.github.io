@@ -664,3 +664,11 @@ body {
     font-size: 1rem;
   }
 }
+
+.chinese1 {
+  margin-right: 10%;
+}
+
+.chinese2 {
+  margin-left: 10%;
+}
