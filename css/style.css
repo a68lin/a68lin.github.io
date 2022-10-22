@@ -497,8 +497,7 @@ body {
 }
 
 .text_left {
-  margin: 0rem 6%;
-  text-align: left;
+  margin: 0rem 0rem;
 }
 
 .maincontent_link {
@@ -583,6 +582,9 @@ body {
     display: grid;
     grid-template-areas: "logo content";
   }
+  .text_left {
+    margin: 0rem 6%;
+  }
 }
 
 .footer{
@@ -595,27 +597,27 @@ body {
 .footertext {
   color: #f3f3f3;
   padding: 2rem 2rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
   margin-bottom: 0;
 }
 
 .footerimagetext {
   color: #f3f3f3;
-  margin-left: 5rem;
+  margin-left: 3rem;
   padding-top: 0;
 }
 
 .footerimage{
   width: 20rem;
   height: 20rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 .btnfooter {
   background-color: black;
   border: 1px solid #f3f3f3;
   padding: 1rem 2rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-bottom: 0;
   font-size: 1rem;
 }
