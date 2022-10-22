@@ -10,6 +10,7 @@ html,body{
 
 body {
     font-family: PT Serif, Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
  a {
@@ -166,6 +167,12 @@ body {
    color: white;
    margin-left: 2rem;
  }
+
+ .menuhead:hover{
+  margin: 0;
+  color: lightgrey;
+  margin-left: 2rem;
+}
 
  @media screen and (min-width: 770px) {
    .icon--menu {
@@ -489,8 +496,13 @@ body {
   opacity: 0.7;;
 }
 
+.text_left {
+  margin: 0rem 6%;
+  text-align: left;
+}
+
 .maincontent_link {
-  margin: 0rem 3rem;
+  margin:0rem 3rem;
   color: #D83A27;
 }
 
@@ -570,5 +582,83 @@ body {
   .orderchange {
     display: grid;
     grid-template-areas: "logo content";
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 40rem;
+  background-color: #020B0D;
+  margin: none;
+}
+
+.footertext {
+  color: #f3f3f3;
+  padding: 2rem 2rem;
+  margin-left: 3rem;
+  margin-bottom: 0;
+}
+
+.footerimagetext {
+  color: #f3f3f3;
+  margin-left: 5rem;
+  padding-top: 0;
+}
+
+.footerimage{
+  width: 20rem;
+  height: 20rem;
+  margin-left: 5rem;
+}
+
+.btnfooter {
+  background-color: black;
+  border: 1px solid #f3f3f3;
+  padding: 1rem 2rem;
+  margin-left: 5rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.btnfooter:hover {
+  background-color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  color: black;
+}
+
+@media screen and (min-width: 770px) {
+  .footerimagetext {
+    color: #f3f3f3;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .footer{
+    width: 100%;
+    height: 30rem;
+    background-color: #020B0D;
+    margin: none;
+  }
+
+  .footertext {
+    color: #f3f3f3;
+    padding: 2rem 2rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .footerimage{
+    width: 20rem;
+    height: 20rem;
+    margin-left: 0rem;
+  }
+  
+  .btnfooter {
+    background-color: black;
+    border: 1px solid #f3f3f3;
+    padding: 1rem 2rem;
+    margin-left: 5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
   }
 }
